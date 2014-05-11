@@ -26,7 +26,7 @@ lines(inputdata$DateTime,inputdata$Sub_metering_1,col="black")
 lines(inputdata$DateTime,inputdata$Sub_metering_2,col="red")
 lines(inputdata$DateTime,inputdata$Sub_metering_3,col="blue")
 legend("topright", col=c("black", "blue", "red"), cex = .75, lty=1,
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),bty="n" )
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),bty="n",inset=0.05)
 
 
 xrange <- range(inputdata$DateTime) 
